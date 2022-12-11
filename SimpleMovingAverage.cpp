@@ -30,7 +30,7 @@ void simpleMovingAverageImpl(const vector<double> in, vector<double>& out, int w
 
     auto end = std::chrono::steady_clock::now();
     auto elapsed_ms = std::chrono::duration_cast<std::chrono::milliseconds>(end - begin);
-    std::cout << "The time: " << elapsed_ms.count() << " ms\n";
+    std::cout << "Type: double " << "Window: " << window << " The time: " << elapsed_ms.count() << " ms\n";
 }
 
 void simpleMovingAverageImpl(const vector<float> in, vector<float>& out, int window) {
@@ -40,7 +40,7 @@ void simpleMovingAverageImpl(const vector<float> in, vector<float>& out, int win
 
     auto end = std::chrono::steady_clock::now();
     auto elapsed_ms = std::chrono::duration_cast<std::chrono::milliseconds>(end - begin);
-    std::cout << "The time: " << elapsed_ms.count() << " ms\n";
+    std::cout << "Type: float " << "Window: " << window << " The time: " << elapsed_ms.count() << " ms\n";
    // for (int i = 0; i < out.size(); i++) {
    //     cout << out[i] << "\n";
     //}
