@@ -44,7 +44,6 @@ void getRandomFunction(vector<float>& f) {
 }
 void test(const vector<float>& inputSignal) {
     vector <float> sma, x;
-    //ofstream fOutResult("result.dat");
     sma.reserve(1000000);
     simpleMovingAverageImpl(inputSignal, sma, 4);
     simpleMovingAverageImpl(inputSignal, sma, 8);
@@ -56,7 +55,6 @@ void test(const vector<float>& inputSignal) {
 
 void test(const vector<double>& inputSignal) {
     vector <double> sma, x;
-    //ofstream fOutResult("result.dat");
     sma.reserve(1000000);
     simpleMovingAverageImpl(inputSignal, sma, 4);
     simpleMovingAverageImpl(inputSignal, sma, 8);
